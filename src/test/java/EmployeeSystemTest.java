@@ -40,9 +40,16 @@ public class EmployeeSystemTest {
     @Test
     public void checkIfEmployeeHasID(){
         testEmployee = new Employee("Göran",53);
-        boolean actual = testEmployee.uID > 0;
+        System.out.println(testEmployee.uID);
+        testEmployee = new Employee("Göran",53);
+        testEmployee = new Employee("Göran",53);
+        testEmployee = new Employee("Göran",53);
+        System.out.println(testEmployee.uID);
+        boolean actual = testEmployee.uID >= 0;
         assertTrue(actual);
     }
+
+
 
 
 }
