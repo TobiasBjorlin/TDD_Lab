@@ -2,8 +2,10 @@ import java.util.ArrayList;
 
 public class Employee {
     String name;
-    public Employee(String eName){
+    int age;
+    public Employee(String eName, int eAge){
         name = eName;
+        age = eAge;
     }
 
 }

@@ -11,7 +11,7 @@ public class EmployeeSystemTest {
     @Test
     public void checkIfEmployeeAddedToArrayListTest(){
         testObject = new EmployeeSystem();
-        tobias = new Employee("Tobias");
+        tobias = new Employee("Tobias", 26);
         testObject.addEmployeeToArrayList(tobias);
         boolean actual = testObject.employeeList.contains(tobias);
         boolean expected = true;
@@ -20,16 +20,16 @@ public class EmployeeSystemTest {
 
     @Test
     public void checkIfEmployeeHasName(){
-        tobias = new Employee("Tobias");
+        tobias = new Employee("Tobias", 26);
         boolean actual = tobias.name.isEmpty();
         assertFalse(actual);
     }
 
     @Test
     public void checkIfEmployeeHasAge(){
-        tobias = new Employee("Tobias");
+        tobias = new Employee("Tobias",26);
         boolean actual;
-        if (tobias.age > 0){
+        if(tobias.age > 0){
         }
     }
 
