@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class EmployeeSystemTest {
 
@@ -30,7 +29,11 @@ public class EmployeeSystemTest {
         testEmployee = new Employee("Tobias",26);
         boolean actual;
         if(testEmployee.age > 0){
+            actual = true;
+        }else {
+            actual = false;
         }
+        assertTrue(actual);
     }
 
 
