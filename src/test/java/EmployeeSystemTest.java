@@ -37,6 +37,15 @@ public class EmployeeSystemTest {
         assertTrue(actual);
     }
 
+    @Test
+    public void checkIfEmployeeHasID(){
+        testEmployee = new Employee("Göran",53);
+        boolean actual;
+        if (testEmployee.uID > 0){
+
+        }
+    }
+
 
 }
 
