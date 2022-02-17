@@ -30,7 +30,8 @@ public class EmployeeSystemTest {
         boolean actual;
         if(testEmployee.age > 0){
             actual = true;
-        }else {
+        }
+        else{
             actual = false;
         }
         assertTrue(actual);
