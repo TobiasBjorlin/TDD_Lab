@@ -25,6 +25,14 @@ public class EmployeeSystemTest {
         assertFalse(actual);
     }
 
+    @Test
+    public void checkIfEmployeeHasAge(){
+        tobias = new Employee("Tobias");
+        boolean actual;
+        if (tobias.age > 0){
+        }
+    }
+
 
 }
 
