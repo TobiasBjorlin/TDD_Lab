@@ -31,6 +31,9 @@ public class Employee {
     public int getID(){
         return uID;
     }
+    public void setID(int newID){
+        uID = newID;
+    }
 
 
 }
