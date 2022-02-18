@@ -39,4 +39,7 @@ public class Employee {
     public float getSalary(){
         return salary;
     }
+    public void setSalary(float newSalary){
+        salary = newSalary;
+    }
 }
