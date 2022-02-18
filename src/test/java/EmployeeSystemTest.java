@@ -86,6 +86,7 @@ public class EmployeeSystemTest {
     public void testGetAndSetForID(){
         testEmployee = new Employee("Simon", 25, 34000);
         System.out.println(testEmployee.getID());
+        testEmployee.setID(5);
     }
 
 }
