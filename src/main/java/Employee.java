@@ -12,5 +12,8 @@ public class Employee {
         age = eAge;
         salary = eSalary;
     }
+    public String getName(){
+        return name;
+    }
 
 }
