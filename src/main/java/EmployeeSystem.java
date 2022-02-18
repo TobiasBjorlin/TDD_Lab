@@ -17,4 +17,8 @@ public class EmployeeSystem {
             System.out.println(employeeList.get(i).getSalary());
         }
     }
+
+    public void raiseSingleEmployeeSalary(float percent) {
+
+    }
 }
