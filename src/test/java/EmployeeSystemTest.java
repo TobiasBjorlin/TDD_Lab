@@ -145,7 +145,7 @@ public class EmployeeSystemTest {
         testObject.employeeList.add(testEmployee);
         System.out.println(testObject.employeeList.get(0).getName());
 
-        testObject.raiseSingleEmployeeSalary(5);
+        testObject.raiseSingleEmployeeSalary(5, 1);
     }
 
 
