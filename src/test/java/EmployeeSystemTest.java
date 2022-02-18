@@ -62,7 +62,9 @@ public class EmployeeSystemTest {
 
     @Test
     public void testGetAndSetForName(){
-        testEmployee.getName();
+        testEmployee = new Employee("Andreas", 26 , 2000);
+        System.out.println(testEmployee.getName());
+        testEmployee.setName("Andenman");
     }
 
 }
