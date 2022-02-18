@@ -19,6 +19,11 @@ public class EmployeeSystem {
     }
 
     public void raiseSingleEmployeeSalary(float percent, int uID) {
-
+        for (int i = 0; employeeList.size() > i; ++i){
+            if (employeeList.get(i).getID() == uID){
+                employeeList.get(i).setSalary(employeeList.get(i).salary*(1+(percent/100)));
+                System.out.println(employeeList.get(i).getSalary());
+            }
+        }
     }
 }
