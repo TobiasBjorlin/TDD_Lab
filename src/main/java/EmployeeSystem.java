@@ -10,4 +10,8 @@ public class EmployeeSystem {
     public void removeEmployeeFromArrayList(Employee newEmployee){
         employeeList.remove(newEmployee);
     }
+
+    public void raiseAllSalariesPercent(float percent) {
+
+    }
 }
