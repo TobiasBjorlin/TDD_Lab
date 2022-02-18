@@ -102,7 +102,7 @@ public class EmployeeSystemTest {
     public void testGetAndSetForSalary(){
         testEmployee = new Employee("Samuel", 25, 40000);
         System.out.println(testEmployee.getSalary());
-
+        testEmployee.setSalary(44000);
     }
 
 }
