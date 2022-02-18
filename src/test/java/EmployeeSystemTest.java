@@ -143,9 +143,12 @@ public class EmployeeSystemTest {
         testObject = new EmployeeSystem();
         testEmployee = new Employee("Tobias", 26, 1000);
         testObject.employeeList.add(testEmployee);
-        System.out.println(testObject.employeeList.get(0).getName());
+        System.out.println(testObject.employeeList.get(0).getID());
 
         testObject.raiseSingleEmployeeSalary(5, 1);
+        boolean actual = testEmployee.getSalary() == (1000*1.02);
+        assertTrue(actual);
+
     }
 
 
