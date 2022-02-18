@@ -4,9 +4,10 @@ public class Employee {
     int age;
     float salary;
     static int uID = 0;
-    static {
+    {
         uID += 1;
     }
+    int uniqueID = uID;
     public Employee(String eName, int eAge, float eSalary){
         name = eName;
         age = eAge;
@@ -29,10 +30,10 @@ public class Employee {
 
 
     public int getID(){
-        return uID;
+        return uniqueID;
     }
     public void setID(int newID){
-        uID = newID;
+        uniqueID = newID;
     }
 
 
