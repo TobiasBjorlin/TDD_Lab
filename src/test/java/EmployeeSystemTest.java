@@ -98,5 +98,11 @@ public class EmployeeSystemTest {
         assertTrue(actual);
     }
 
+    @Test
+    public void testGetAndSetForSalary(){
+        testEmployee = new Employee("Samuel", 25, 40000);
+        System.out.println(testEmployee.getSalary());
+    }
+
 }
 
