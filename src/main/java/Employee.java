@@ -36,5 +36,7 @@ public class Employee {
         uniqueID = newID;
     }
 
-
+    public float getSalary(){
+        return salary;
+    }
 }
