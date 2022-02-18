@@ -23,7 +23,7 @@ public class Employee {
         return age;
     }
     public void setAge(int newAge){
-
+        age = newAge;
     }
 
 }

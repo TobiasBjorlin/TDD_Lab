@@ -66,6 +66,9 @@ public class EmployeeSystemTest {
         System.out.println(testEmployee.getName());
         testEmployee.setName("Andenman");
         System.out.println(testEmployee.getName());
+        boolean actual = testEmployee.getName().equals("Andenman");
+
+        assertTrue(actual);
     }
 
     @Test
@@ -73,6 +76,16 @@ public class EmployeeSystemTest {
         testEmployee = new Employee("Linus", 26,100 );
         System.out.println(testEmployee.getAge());
         testEmployee.setAge(6);
+        System.out.println(testEmployee.getAge());
+        boolean actual = testEmployee.getAge() == 6;
+
+        assertTrue(actual);
+    }
+
+    @Test
+    public void testGetAndSetForID(){
+        testEmployee = new Employee("Simon", 25, 34000);
+        System.out.println(testEmployee.getID());
     }
 
 }
