@@ -72,6 +72,7 @@ public class EmployeeSystemTest {
     public void testGetAndSetForAge(){
         testEmployee = new Employee("Linus", 26,100 );
         System.out.println(testEmployee.getAge());
+        testEmployee.setAge(6);
     }
 
 }
