@@ -138,6 +138,16 @@ public class EmployeeSystemTest {
 
     }
 
+    @Test
+    public void checkIfSingleEmployeeHadRaiseTest(){
+        testObject = new EmployeeSystem();
+        testEmployee = new Employee("Tobias", 26, 1000);
+        testObject.employeeList.add(testEmployee);
+        System.out.println(testObject.employeeList.get(0).getName());
+
+        testObject.raiseSingleEmployeeSalary();
+    }
+
 
 }
 
