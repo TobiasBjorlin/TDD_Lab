@@ -65,6 +65,13 @@ public class EmployeeSystemTest {
         testEmployee = new Employee("Andreas", 26 , 2000);
         System.out.println(testEmployee.getName());
         testEmployee.setName("Andenman");
+        System.out.println(testEmployee.getName());
+    }
+
+    @Test
+    public void testGetAndSetForAge(){
+        testEmployee = new Employee("Linus", 26, 38000);
+        System.out.println(testEmployee.getAge());
     }
 
 }
