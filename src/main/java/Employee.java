@@ -19,4 +19,8 @@ public class Employee {
         name = newName;
     }
 
+    public int getAge(){
+        return age;
+    }
+
 }

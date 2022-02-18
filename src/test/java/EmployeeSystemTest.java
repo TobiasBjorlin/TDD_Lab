@@ -70,7 +70,7 @@ public class EmployeeSystemTest {
 
     @Test
     public void testGetAndSetForAge(){
-        testEmployee = new Employee("Linus", 26, 38000);
+        testEmployee = new Employee("Linus", 26,100 );
         System.out.println(testEmployee.getAge());
     }
 
