@@ -121,6 +121,21 @@ public class EmployeeSystemTest {
         assertTrue(actual);
     }
 
+    @Test
+    public void checkIfEmployeesHadRaiseTest(){
+        testObject = new EmployeeSystem();
+        testEmployee = new Employee("Tobias", 26, 1000);
+        testObject.employeeList.add(testEmployee);
+        Employee newTestEmployee = new Employee("Viktor", 26, 2000);
+        testObject.employeeList.add(newTestEmployee);
+        System.out.println(testObject.employeeList.get(0).getName());
+        System.out.println(testObject.employeeList.get(1).getName());
+
+        testObject.raiseAllSalariesPercent(2);
+
+
+    }
+
 
 }
 
