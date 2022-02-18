@@ -12,9 +12,18 @@ public class EmployeeSystemTest {
         testObject = new EmployeeSystem();
         testEmployee = new Employee("Tobias", 26, 1000);
         testObject.addEmployeeToArrayList(testEmployee);
+        System.out.println(testEmployee.name);
         boolean actual = testObject.employeeList.contains(testEmployee);
         boolean expected = true;
         assertEquals(expected, actual);
+    }
+
+    @Test
+    public void checkIfEmployeeHasBeenRemovedFromArrayList(){
+        testObject = new EmployeeSystem();
+        testEmployee = new Employee("Tobias", 26, 30000);
+        testObject.addEmployeeToArrayList(testEmployee);
+        testObject.removeEmployeeFromArrayList(testEmployee);
     }
 
     @Test
@@ -103,7 +112,13 @@ public class EmployeeSystemTest {
         testEmployee = new Employee("Samuel", 25, 40000);
         System.out.println(testEmployee.getSalary());
         testEmployee.setSalary(44000);
+        System.out.println(testEmployee.getSalary());
+
+        boolean actual = testEmployee.getSalary() == 44000;
+
+        assertTrue(actual);
     }
+
 
 }
 
