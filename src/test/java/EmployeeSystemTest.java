@@ -41,9 +41,9 @@ public class EmployeeSystemTest {
     public void checkIfEmployeeHasID(){
         testEmployee = new Employee("Göran",53, 1000);
         System.out.println(testEmployee.uID);
-        testEmployee = new Employee("Göran",53, 1000);
-        testEmployee = new Employee("Göran",53, 1000);
-        testEmployee = new Employee("Göran",53, 1000);
+        Employee newonetestEmployee = new Employee("Göran",53, 1000);
+        Employee newtwotestEmployee = new Employee("Göran",53, 1000);
+        Employee newthreetestEmployee = new Employee("Göran",53, 1000);
         System.out.println(testEmployee.uID);
         boolean actual = testEmployee.uID >= 0;
         assertTrue(actual);
@@ -85,12 +85,17 @@ public class EmployeeSystemTest {
     @Test
     public void testGetAndSetForID(){
         testEmployee = new Employee("Simon", 25, 71000);
-        testEmployee = new Employee("Simon", 25, 71000);
+        Employee newtestEmployee = new Employee("Simon", 25, 71000);
         System.out.println(testEmployee.getID());
         testEmployee.setID(5);
         System.out.println(testEmployee.getID());
-        testEmployee = new Employee("Simon", 25, 34000);
+        Employee newonetestEmployee = new Employee("Simon", 25, 34000);
         System.out.println(testEmployee.getID());
+        System.out.println(newtestEmployee.getID());
+        System.out.println(newonetestEmployee.getID());
+
+        boolean actual = testEmployee.getID() == 5;
+        assertTrue(actual);
     }
 
 }
