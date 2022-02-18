@@ -18,7 +18,7 @@ public class EmployeeSystem {
         }
     }
 
-    public void raiseSingleEmployeeSalary(float percent) {
+    public void raiseSingleEmployeeSalary(float percent, int uID) {
 
     }
 }
