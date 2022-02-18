@@ -7,4 +7,7 @@ public class EmployeeSystem {
     public void addEmployeeToArrayList(Employee newEmployee) {
         employeeList.add(newEmployee);
     }
+    public void removeEmployeeFromArrayList(Employee newEmployee){
+        employeeList.remove(newEmployee);
+    }
 }

@@ -12,7 +12,7 @@ public class EmployeeSystemTest {
         testObject = new EmployeeSystem();
         testEmployee = new Employee("Tobias", 26, 1000);
         testObject.addEmployeeToArrayList(testEmployee);
-        System.out.println(testEmployee.name);
+        System.out.println(testObject.employeeList.get(0).name);
         boolean actual = testObject.employeeList.contains(testEmployee);
         boolean expected = true;
         assertEquals(expected, actual);
@@ -24,6 +24,8 @@ public class EmployeeSystemTest {
         testEmployee = new Employee("Tobias", 26, 30000);
         testObject.addEmployeeToArrayList(testEmployee);
         testObject.removeEmployeeFromArrayList(testEmployee);
+        boolean actual = testObject.employeeList.contains(testEmployee);
+        assertFalse(actual);
     }
 
     @Test
