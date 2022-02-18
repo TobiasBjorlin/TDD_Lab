@@ -133,6 +133,8 @@ public class EmployeeSystemTest {
 
         testObject.raiseAllSalariesPercent(2);
 
+        boolean actual = testEmployee.getSalary() == (1000*1.02);
+        assertTrue(actual);
 
     }
 

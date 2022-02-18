@@ -12,6 +12,9 @@ public class EmployeeSystem {
     }
 
     public void raiseAllSalariesPercent(float percent) {
-
+        for (int i = 0; employeeList.size() > i; ++i){
+            employeeList.get(i).setSalary(employeeList.get(i).salary*(1+(percent/100)));
+            System.out.println(employeeList.get(i).getSalary());
+        }
     }
 }
