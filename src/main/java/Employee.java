@@ -19,11 +19,18 @@ public class Employee {
         name = newName;
     }
 
+
     public int getAge(){
         return age;
     }
     public void setAge(int newAge){
         age = newAge;
     }
+
+
+    public int getID(){
+        return uID;
+    }
+
 
 }
