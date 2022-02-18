@@ -4,7 +4,7 @@ public class Employee {
     int age;
     float salary;
     static int uID = 0;
-    {
+    static {
         uID += 1;
     }
     public Employee(String eName, int eAge, float eSalary){
